@@ -1,0 +1,45 @@
+nav {
+  display: flex;
+  background-color: #0a71c6;
+
+  ul {
+    display: flex;
+  }
+
+  .header__sociallinks {
+    align-items: center;
+    li {
+      margin: 0 2rem;
+    }
+  }
+
+  .header__navigation {
+    align-items: center;
+    margin-left: auto;
+    font-size: large;
+    font-weight: 600;
+
+    li {
+      margin: 0 2rem;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        height: 2rem;
+        position: relative;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a:hover::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -12px;
+        left: 0;
+        right: 0;
+        border-bottom: 2px solid white;
+      }
+    }
+  }
+}
